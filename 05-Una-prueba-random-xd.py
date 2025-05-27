@@ -1,4 +1,4 @@
 nombre = "Ian"
 apellido = "Fack"
-
-print ("Hola mi nombre es:", nombre,  "y mi apellido es:", apellido)
+edad = 22
+print ("Hola mi nombre es:", nombre,  ",mi apellido es:", apellido, "y mi edad es", edad)
