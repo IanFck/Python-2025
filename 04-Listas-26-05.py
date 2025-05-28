@@ -95,3 +95,7 @@ print(ramos)
 ramos.sort (key=len) #Key es un propiedad del metodo sort y se pasa un valor que es len cuanta la cantidad de caracteres
 print(ramos)
 
+#Ocupando extendiendo una lista a partir de otra
+otros_ramos = ["Calculo","Autómatas"]
+ramos.extend(otros_ramos)
+print(ramos)
