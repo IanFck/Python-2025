@@ -70,3 +70,28 @@ print (type(conjunto_vacio))
 
 colores = {"Azul", "Rojo", "Verde", "Azul", 34}
 print (colores)
+
+#funcion APPEND agrega un elemento al final de la lista
+ramos.append ("Lenguaje")
+print(ramos)
+
+#Modificar elemento de la lista
+ramos [0] = "Comunicacion" #Modifica el primer elemento porque se pone 0, si fuera 1 seria el 2do elemento
+print(ramos)
+
+#Funcion Insert
+ramos.insert(0, "Algebra") #Aqui se ponen 2, el lugar donde se quiere modificar y el parametro que meteremos a la lista
+print(ramos)
+
+#Elimina el ultimo elemento de la lista
+ramos.pop()
+print(ramos)
+
+#Ordenando elementos de una lista de forma alfabetica
+ramos.sort ()
+print(ramos)
+
+#ORDENANDL elementos de una lista segun cantiadades de caracteres
+ramos.sort (key=len) #Key es un propiedad del metodo sort y se pasa un valor que es len cuanta la cantidad de caracteres
+print(ramos)
+
