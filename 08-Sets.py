@@ -1,0 +1,16 @@
+#Creando sets
+colores = {"Azul","Rojo","Azul","Verde"}
+otro_color = {"Azul","Naranjo"}
+
+print(colores)
+
+diferencia = colores.difference(otro_color)
+print(diferencia)
+
+#Agregando un nuevo elemento
+colores.add ("Blanco")
+print(colores)
+
+#Eliminado un elemento del set
+colores.discard("Blanco")
+print(colores)
