@@ -1,3 +1,8 @@
+#Comandos para confirmar cambios en github
+#git add. / git add.
+#git commit -m ""
+#git push
+
 #FUNCION LEN (es la cantidad de caracteres que te da una variable)
 carrera = "Ingenieria Civil en informatica"
 print (f"La palabra {carrera}", len (carrera))
