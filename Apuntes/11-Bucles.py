@@ -41,5 +41,18 @@ while num <= 50:
 for i in (1,2,3,4,5,6,7,8,9,10):
  print(i)
 
-for i in range(1,10,2):#Aqui es un rango entre 1 y 10 pero al final te restara 1 en este caso imprime hasta el 9
+for i in range(1,10,2):#Aqui es un rango entre 1 y 10 pero al final te restara 1 en este caso imprime hasta el 9 #Y el 2 incrementa el i en este caso x 2
     print(i)
+
+#for num in range(2,10):
+    #for i in range(2,num):
+       #if num % i == 0:
+            #print(f"{num}")
+
+matriz = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+]
+for fila_id, fila in enumerate(matriz):
+    for col_id, valor in enumerate(fila):
