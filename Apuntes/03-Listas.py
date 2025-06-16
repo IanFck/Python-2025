@@ -78,6 +78,6 @@ ramos.sort (key=len) #Key es un propiedad del metodo sort y se pasa un valor que
 print(ramos)
 
 #Ocupando extendiendo una lista a partir de otra
-otros_ramos = ["Calculo","Autómatas"]
+otros_ramos = ["Calculo","Autómatas", "Libros"]
 ramos.extend(otros_ramos)
 print(ramos)
