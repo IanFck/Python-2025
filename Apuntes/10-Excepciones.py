@@ -10,5 +10,6 @@ except ValueError as e:
     print(f"Error inesperado: {e}")#Errores genericos e inesperados
 else:
     print("Conversion fue existosa!")
-finally:
+finally: #Accion de limpieza, cierra el archivo si es que esta abierto
     print("Finalizacion del bloque")
+    

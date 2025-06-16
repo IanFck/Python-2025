@@ -52,24 +52,6 @@ print (estudiantes[0])
 
 print (ramos.count("Programacion"))
 
-print ("Ahora veremos las tuplas")
-#Las tuplas no se pueden modificar y eliminar
-#CREANDO UNA TUPLA
-tupla = tuple ()
-estudiantes2 = ("Samir", "Ivan", "Ian")
-print (estudiantes2)
-print (type (tupla))
-print (type (frutas))
-
-print (estudiantes2.index ("Ivan"))
-
-#Ahora veremos los sets, no estan ordenadas y no se puede tener duplicados
-
-conjunto_vacio = set()
-print (type(conjunto_vacio))
-
-colores = {"Azul", "Rojo", "Verde", "Azul", 34}
-print (colores)
 
 #funcion APPEND agrega un elemento al final de la lista
 ramos.append ("Lenguaje")
