@@ -54,5 +54,3 @@ matriz = [
         [4,5,6],
         [7,8,9]
 ]
-for fila_id, fila in enumerate(matriz):
-    for col_id, valor in enumerate(fila):
