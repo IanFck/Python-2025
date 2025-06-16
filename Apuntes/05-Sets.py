@@ -19,5 +19,5 @@ print(colores)
 conjunto_vacio = set()
 print (type(conjunto_vacio))
 
-colores = {"Azul", "Rojo", "Verde", "Azul", 34}
+colores = {"Azul", "Rojo", "Verde", "Azul", "Blanco", 34}
 print (colores)
