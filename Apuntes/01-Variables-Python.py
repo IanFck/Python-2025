@@ -1,10 +1,10 @@
 """GUIA INICIAL DE PYTHON"""
 #Definimos las variables
-nombre = "Ian"
-apellido = "Fack"
-edad = "22"
+nombre = "Carol"
+apellido = "Torres"
+edad = "24"
 #Utilizando variables
-print ("Hola mi nombre es:", nombre, "y mi apellido es:" , apellido, "mi edad es:", edad)
+print ("Hola, soy enterera weona mi nombre es:", nombre, "y mi apellido es:" , apellido, "mi edad es:", edad)
 
 #print con operador de concatenacion
 print ("Hola mi nombre es:" + nombre + "y mi apellido es:" +  apellido + "mi edad es:", edad)
