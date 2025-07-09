@@ -1,0 +1,9 @@
+ID_Cliente,Nombre,Edad,Genero,Ciudad,Compras,Gasto_Total
+101,Ana,25.0,F,Santiago,5,250000
+102,Luis,34.0,M,Valpo,3,180000
+103,Pedro,,M,Concepcion,2,95000
+104,Valentina,28.0,F,Santiago,4,220000
+105,Camila,45.0,F,Puerto Montt,8,400000
+106,Jorge,38.0,M,Valpo,1,60000
+107,Fernanda,29.0,F,Concepcion,3,175000
+107,Fernanda,29.0,F,Concepcion,3,175000

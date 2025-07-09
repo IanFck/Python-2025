@@ -1,0 +1,9 @@
+aID_Venta,Fecha,Producto,Cantidad,Precio_Unitario,Vendedor,Region
+1,2025-01-05,Laptop,2,800,Camila,Metropolitana
+2,2025-01-06,Mouse,5,20,Diego,Valparaiso
+3,2025-01-06,Monitor,1,300,Camila,Metropolitana
+4,2025-01-07,Teclado,3,25,Valentina,Biobio
+5,2025-01-08,Laptop,1,850,Diego,Valparaiso
+6,2025-01-08,Mouse,2,18,Camila,Metropolitana
+7,2025-01-09,Monitor,2,290,Valentina,Biobio
+8,2025-01-10,Teclado,4,23,Camila,Metropolitana
