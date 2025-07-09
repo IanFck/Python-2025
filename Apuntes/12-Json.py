@@ -20,5 +20,4 @@ nuevo_usuario = {
 
 datos.append(nuevo_usuario)
 
-with open(ruta, "r", encoding="utf-8") as archivo:
-    
+#with open(ruta, "r", encoding="utf-8") as archivo:
