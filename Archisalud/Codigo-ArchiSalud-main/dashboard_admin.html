@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ArchiSalud</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+</head>
+<body>
+        <div class="engranaje" onclick="modoOscuro()" title="Cambiar modo"></div>
+    <div class="panel">
+        <div class="top-bar">
+            <div class="left">
+            <a href="index.html">
+            <i class='bx bx-log-out salir'></i>
+            </a>
+            <h3>Bienvenido/a _______ (ADMINISTRADOR)</h3>
+            </div>
+            <div class="right">
+            <div class="engranaje" onclick="modoOscuro()" title="Cambiar modo"></div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-bed"></i>
+                <h3>Estatus de camas</h3>
+                <p>REVISAR DISPONIBILIDAD DE CAMAS SEGÚN ESPECIALIDAD.</p>
+                <a href="camas2.html">
+                <button>INGRESAR</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-ambulance"></i>
+                <h3>Derivación</h3>
+                <p>INICIAR PROCESO DE DERIVACIÓN DEL PACIENTE.</p>
+                <a href="derivacion2.html">
+                <button>INGRESAR</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <i class="bx bxs-folder-open carpeta"></i>
+                <h3>Historial de usuarios</h3>
+                <p>HISTORIAL DE ACCIONES REALIZADAS POR LOS USUARIOS.</p>
+                <a href="historial.html">
+                <button>INGRESAR</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+            <div id="modal-config" class="modal-config">
+        <button class="close-btn" onclick="cerrarModal()">✖</button>
+        <h2>⚙ AJUSTES DE CONFIGURACIÓN</h2>
+        <div class="switch-container">
+            <label class="switch">
+            <input type="checkbox" id="modo-toggle" onchange="cambiarModo()">
+            <span class="slider"></span>
+            </label>
+            <span id="modo-label">Cambiar a modo Oscuro</span>
+        </div>
+    </div>
+    <script src="js/dashboard.js" defer></script>
+</body>
+</html>

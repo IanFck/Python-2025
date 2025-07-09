@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Conexion con favicon, css y iconos -->
+    <meta charset="UTF-8">
+    <title>ArchiSalud</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/estado.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body data-camas="20">
+  <header>
+    <a href="camas2.html">
+      <i class='bx bx-undo salir'></i>
+    </a>
+    <h1> MEDICINA</h1>
+  </header>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>CÓDIGO CAMA</th>
+          <th>ESTADO</th>
+          <th>FECHA INGRESO</th>
+          <th>DATOS</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-camas"></tbody>
+    </table>
+  </div>
+  <script src="js/estado.js"></script>
+</body>
+</html>

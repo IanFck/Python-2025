@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Conexiones con css y favicon -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchiSalud</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css"> 
+    <link rel="stylesheet" href="./css/index_cambio_contra.css">
+    
+<!-- Conexion pagina box icons -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Engranaje visual del modo oscuro -->
+    <div class="engranaje" onclick="modoOscuro()" title="Cambiar modo"></div>
+
+    <!-- Imagen de logo ArchiSalud-->
+  <div class="principal-container">
+    <div class="logo">
+      <img src="../images/archisalud_logo.png" alt="Logo ArchiSalud" class="logo-img" />
+    </div>
+    <div class="form-container">
+      
+      <!--Contenedor de inicio de sesion-->
+      <div class="login-box"> 
+        <h2>Inicio de sesión</h2>
+        <form id="loginForm">
+          <div class="input-group">      
+            <i class='bx bxs-user-circle usuario'></i>
+            <!-- Rut para iniciar sesion-->
+            <input type="rut" id="rut" placeholder="Rut: 12345678-9" required />
+          </div>
+          <div class="input-group">
+            <i class='bx bxs-lock candado'></i>
+            <!-- Contraseña de inicio de sesion-->
+            <input type="password" id="password" placeholder="Contraseña" required />
+          </div>
+          <button type="submit">Iniciar sesión</button>
+        </form>
+        <!-- Si no corresponde el rut o contraseña, lanzara un mensaje de error-->
+        <p id="error" style="color: red;"></p>
+        <!-- Seccion pra cambiar contraseña-->
+        <p><a href="cambiar-contraseña.html"> <h7>¿Olvidaste tu Contraseña?</h7></a></p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modo oscuro-->
+    <div id="overlay" class="overlay" onclick="cerrarModal()"></div>
+
+      <div id="modal-config" class="modal-config">
+        <div class="close-btn" onclick="cerrarModal()">✖</div>
+        <h2>⚙ AJUSTES DE CONFIGURACIÓN</h2>
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="modo-toggle" onchange="cambiarModo()">
+            <span class="slider"></span>
+          </label>
+          <span id="modo-label">Cambiar a modo Oscuro</span>
+        </div>
+      </div>
+      
+    <!-- Conexion con el Javascript-->
+    <script src="js/Script.js" defer></script>
+</body>
+</html>

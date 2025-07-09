@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Rosa Pérez",
+        "rut": "4567890-3",
+        "edad": 74,
+        "sexo": "Femenino"
+    },
+    {
+        "nombre": "Luis Soto",
+        "rut": "6234567-8",
+        "edad": 55,
+        "sexo": "Masculino"
+    },
+    {
+        "nombre": "Carolina Muñoz",
+        "rut": "12345678-5",
+        "edad": 33,
+        "sexo": "Femenino"
+    },
+    {
+        "nombre": "Andrés Ramírez",
+        "rut": "21234567-2",
+        "edad": 18,
+        "sexo": "Masculino"
+    },
+    {
+        "nombre": "Valentina Torres",
+        "rut": "26789012-7",
+        "edad": 12,
+        "sexo": "Femenino"
+    }
+]

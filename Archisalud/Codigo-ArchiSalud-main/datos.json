@@ -1,0 +1,25 @@
+
+{
+"usuarios": [
+        {
+        "rut": "22272731-6",
+        "contraseña": "papitas",
+        "rol": "medico"
+        },
+        {
+        "rut": "22287173-5",
+        "contraseña": "galletas",
+        "rol": "admin"
+        },
+        {
+        "rut": "21230613-4",
+        "contraseña": "messi y cristiano",
+        "rol": "medico"
+        },
+        {
+        "rut": "22175623-1",
+        "contraseña": "camilitoch",
+        "rol": "medico"
+        }
+    ]
+}

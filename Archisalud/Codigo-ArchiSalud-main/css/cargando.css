@@ -1,0 +1,55 @@
+/* Fuerza fondo blanco y texto azul */
+body.pantalla-carga {
+background-color: white !important;
+color: #356BA1 !important;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+flex-direction: column;
+font-family: Arial, sans-serif;
+}
+
+/* Texto "Cargando..." */
+body.pantalla-carga h2 {
+color: #356BA1 !important;
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+/* Ícono de carga */
+body.pantalla-carga .spinner i {
+font-size: 80px !important;
+color: #356BA1 !important;
+}
+/* Oscurecer todo */
+body.oscuro {
+  background-color: #1b2a47;
+  color: white;
+}
+
+body.oscuro .form-container,
+body.oscuro .segundo-container,
+body.oscuro .principal-container {
+  background-color: #263b5c;
+  color: white;
+}
+
+body.oscuro input,
+body.oscuro button,
+body.oscuro a {
+  color: white;
+  background-color: #1b2a47;
+}
+
+body.oscuro input::placeholder {
+  color: #ccc;
+}
+
+body.oscuro button:hover {
+  background-color: #356ba1;
+}
+
+body.oscuro .modal-config {
+  background-color: #000;
+}

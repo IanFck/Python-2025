@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Conexiones con favicon, css y iconos-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchiSalud</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/normalize.css"> 
+    <link rel="stylesheet" href="./css/index_cambio_contra.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Boton de engranaje-->
+    <div class="engranaje" onclick="modoOscuro()" title="Cambiar modo"></div>
+  <div class="segundario-container">
+    <div class="logo">
+      <!-- Logo de ArchiSalud-->
+      <img src="./images/archisalud_logo.png" alt="Logo ArchiSalud" class="logo-img" />
+    </div>
+
+    <div class="segundo-container">
+      <div class="login-box">
+        <!-- Titulo de cambiar contraseña-->
+        <h2>Cambiar Contraseña</h2>
+        <form id="cambiarForm">
+          <div class="dosinp-group">
+            <i class='bx bxs-lock candado2'></i>
+            <input type="password" id="nueva" placeholder="Nueva contraseña" required />
+          </div>
+          <div class="dosinp-group">
+            <i class='bx bxs-lock candado2'></i>
+            <input type="password" id="confirmar" placeholder="Confirmar contraseña" required />
+          </div>
+          <button type="submit">Confirmar</button>
+        </form>
+        <p id="mensaje"></p>
+        <a href="index.html">Volver</a>
+      </div>
+    </div>
+  </div>
+    <!--Modo oscuro-->
+    <div id="overlay" class="overlay" onclick="cerrarModal()"></div>
+
+      <div id="modal-config" class="modal-config">
+        <div class="close-btn" onclick="cerrarModal()">✖</div>
+        <h2>⚙ AJUSTES DE CONFIGURACIÓN</h2>
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="modo-toggle" onchange="cambiarModo()">
+            <span class="slider"></span>
+          </label>
+          <span id="modo-label">Cambiar a modo Oscuro</span>
+        </div>
+      </div>
+  <script src="js/cambiar.js"></script>
+</body>
+</html>

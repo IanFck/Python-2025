@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ArchiSalud</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/normalize.css"> 
+    <link rel="stylesheet" href="./css/historial.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra superior -->
+    <header>
+      <div class="header-wrap">
+        <a href="dashboard_admin.html">
+            <i class='bx bx-undo salir'></i>
+        </a>
+        <h1>HISTORIAL DE USUARIOS.</h1>
+      </div>
+    </header>
+
+    <!-- Tabla -->
+    <main>
+      <table id="history-table">
+        <thead>
+          <tr>
+            <th>USUARIO</th>
+            <th>ROL</th>
+            <th>ACCIÓN</th>
+            <th>ÚLTIMA VEZ ACTIVO.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Las filas se rellenan desde historial.js -->
+        </tbody>
+      </table>
+    </main>
+
+    <!-- Lógica -->
+    <script src="js/historial.js"></script>
+  </body>
+</html>

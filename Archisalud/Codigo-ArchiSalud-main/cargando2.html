@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ArchiSalud</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/normalize.css"> 
+    <link rel="stylesheet" href="./css/cargando.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    setTimeout(() => {
+    Swal.fire({
+        title: 'Derivación exitosa',
+        text: 'Documento de derivación descargado correctamente.',
+        icon: 'success',
+        confirmButtonText: 'Aceptar'
+    }).then(() => {
+      // Redirigir después de cerrar el popup
+        window.location.href = 'dashboard_admin.html';
+    });
+    }, 3000);
+</script>
+
+<body class="pantalla-carga">
+    <!-- Pantalla de carga-->
+    <h2>Cargando. . .</h2>
+    <div class="spinner">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
+
+    <script src="js/cargando2.js"></script>
+</body>
+</html>

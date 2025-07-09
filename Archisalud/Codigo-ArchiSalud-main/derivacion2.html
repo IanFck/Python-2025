@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Conexion con favicon, css y iconos -->
+    <meta charset="UTF-8">
+    <title>ArchiSalud</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/derivacion.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- Opcion para volver al inicio-->
+            <a href="dashboard_admin.html">
+                <i class='bx bx-undo salir'></i>
+            </a>
+            <h2>DERIVACION PACIENTE</h2>
+            <!-- Engranaje para cambiar modo oscuro-->
+            <div class="engranaje" onclick="modoOscuro()" title="Cambiar modo"></div>
+
+        </div>
+
+        <div class="content">
+            <!-- Panel izquierdo -->
+            <div class="form-panel">
+                <label>Nombre del paciente</label>
+                <input type="text" id="nombre" />
+        
+                <label>Rut</label>
+                <input type="text" id="rut" />
+        
+                <label>Edad</label>
+                <input type="number" id="edad" />
+        
+                <label>Sexo</label>
+                <select id="sexo">
+                    <option value="">Seleccionar</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+
+                
+                <label>Gravedad</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gravedad" value="Baja" /> Baja</label>
+                    <label><input type="radio" name="gravedad" value="Media" /> Media</label>
+                    <label><input type="radio" name="gravedad" value="Alta" /> Alta</label>
+                </div>
+        
+                <label>Área Medica</label>
+                <select id="area">
+                    <option value="">Seleccionar</option>
+                    <option value="trauma">Unidad de paciente crítico</option>
+                    <option value="cardio">Obstetricia y ginecología</option>
+                    <option value="cardio">Neunatologia</option>
+                    <option value="cardio">Unidad de Tratamiento Intermedio Pediatrico	</option>
+                    <option value="cardio">Medicina</option>
+                    <option value="cardio">Cirugía</option>
+                    <option value="cardio">Psiquiatría</option>
+                    <option value="cardio">Pensionado</option>
+                    <option value="cardio">Urgencia</option>
+                    <option value="cardio">Observación urgencia</option>
+                </select>
+
+                <!--Confirmar datos -->
+                <button onclick="confirmarDatos()">CONFIRMAR DATOS</button>
+            </div>
+
+            <!-- Panel derecho -->
+            <div class="derivacion-panel">
+                <div class="hospital-card">
+                    <p><strong>HOSPITAL DE ANCUD</strong><br />
+                    TIEMPO DE DISTANCIA APROX: 1h 12min (82,4 km)</p>
+                    <button class="seleccionar-btn">SELECCIONAR</button>
+                </div>
+
+                <div class="hospital-card">
+                    <p><strong>HOSPITAL DE QUELLÓN</strong><br />
+                    TIEMPO DE DISTANCIA APROX: 1h 12min (84,9 km)</p>
+                    <button class="seleccionar-btn">SELECCIONAR</button>
+                </div>
+
+                <!-- Opcion de realizar derivacion-->
+                <button onclick="realizarDerivacion()">REALIZAR DERIVACIÓN</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="cerrarModal()"></div>
+
+    <div id="modal-config" class="modal-config">
+        <button class="close-btn" onclick="cerrarModal()">✖</button>
+        <h2>⚙ AJUSTES DE CONFIGURACIÓN</h2>
+        <div class="switch-container">
+            <label class="switch">
+            <input type="checkbox" id="modo-toggle" onchange="cambiarModo()">
+            <span class="slider"></span>
+            </label>
+            <span id="modo-label">Cambiar a modo Oscuro</span>
+        </div>
+    </div>
+    <script src="js/derivacion.js"></script>
+</body>
+
+</html>
